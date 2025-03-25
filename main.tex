@@ -1,8 +1,8 @@
-\documentclass[12pt,a4paper]{article}
+\documentclass[12pt,a4paper]{report}
 \usepackage[margin=2.5cm]{geometry}
 \usepackage{graphicx}
 \usepackage{setspace}
-
+\setlength{\footnotesep}{0.2cm}
 \begin{document}
 
 % Cover Page
@@ -40,5 +40,62 @@
 
     \end{center}
 \end{titlepage}
+
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+
+\thispagestyle{empty}
+\tableofcontents
+\addtocontents{toc}{\protect\thispagestyle{empty}}
+\pagenumbering{arabic}
+
+
+\begin{abstract}
+
+\end{abstract}
+
+
+\chapter{Introduction}
+
+\section{Definition}
+
+\hspace*{1cm}On-Board Diagnostics (OBD) is a generic vehicle system that tracks several subsystems and elements, providing real-time
+information and diagnostic trouble codes (DTCs)\footnotemark[1] to assist in vehicle performance evaluation, fault detection and maintenance.
+
+\setlength{\skip\footins}{20pt} % Adjust the value as needed
+\footnotetext[1]{ Diagnostic trouble codes (or fault codes) are OBD-II codes that are stored by the on-board computer diagnostic system. These are used in response to a problem found in the car by the system. 
+}
+
+\section{Background and History of OBD Systems}
+
+\hspace*{1cm}On-Board Diagnostics (OBD) systems become a standard part of modern car design, providing real-time information and standard diagnostic trouble codes (DTCs) to help in vehicle performance monitoring. OBD system development is a reflection of the increasing complexity of automobiles and the growing need for successful emissions control and vehicle maintenance.
+
+\subsection{Early Development}
+
+\hspace*{1cm}The roots of OBD systems date back to the 1960s when automotive manufacturers started adding simple monitoring systems to track the engine performance. These initial systems were basically aimed at identifying severe engine faults but were not standardized or elaborate in their diagnostic features. Every manufacturer used proprietary systems, and this rendered diagnosis and maintenance tough.
+\\\hspace*{1cm}In 1968, Volkswagen\footnotemark[2] introduced the first on-board computer system with scanning capability in their fuel-injected Type 3 models, but this system was entirely analog with no diagnostic capabilities.
+
+\footnotetext[2]{Volkswagen is a German automotive manufacturer known for its innovation in vehicle technology, including early developments in on-board diagnostics (OBD) systems.}
+
+
+\subsection{Introduction of OBD-I}
+
+\hspace*{1cm}In the 1980s, growing concerns over vehicle emissions led to regulatory actions that mandated better diagnostic systems. In 1988, the California Air Resources Board (CARB)\footnotemark[3] introduced the first On-Board Diagnostics standard, known as OBD-I. The system was meant to check various of the most important engine parts and alert drivers when there was an issue, primarily through a malfunction indicator light . However, OBD-I had limited capabilities and lacked uniform standards across manufacturers.
+
+\footnotetext[3]{The California Air Resources Board is a state agency founded in 1967 under the Mulford-Carrell Act to reduce air pollution.
+}
+
+\subsection{Emergence of OBD-II}
+
+\hspace*{1cm}To correct  the shortcomings of OBD-I, CARB and the United States Environmental Protection Agency (EPA)\footnotemark[4] came up with OBD-II, which became mandatory for all vehicles sold in the United States starting in 1996. OBD-II introduced standardized diagnostic trouble codes (DTCs), a universal 16-pin connector, and the ability to monitor various subsystems, including fuel efficiency, emissions control, and engine performance. This
+standardization made it simpler for the mechanics and drivers to diagnose and repair on account of either make or model of the motor vehicle
+
+\footnotetext[3]{The Environmental Protection Agency is an independent agency of the United States government tasked with environmental protection matters. 
+}
+
+\section{Scope of the Report}
+
 
 \end{document}
